@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <!-- 表头-->
+    <include layout="@layout/activity_head_new" />
+    <!-- ip设置-->
+    <View
+        style="@style/line_vertical"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout style="@style/my_ll">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            style="@style/text_black_16_w"
+            android:text="@string/setting_ip"/>
+
+        <EditText
+            android:hint="@string/setting_ip_hint"
+            android:id="@+id/txtIp"
+            android:layout_marginStart="30dp"
+            android:layout_marginRight="20dp"
+            style="@style/text_black_14_m_2"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+    <!--端口设置 -->
+    <include layout="@layout/activity_line" />
+
+    <LinearLayout style="@style/my_ll">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            style="@style/text_black_16_w"
+            android:digits="1234567890."
+            android:text="@string/setting_port"
+            />
+
+        <EditText
+            android:id="@+id/txtPort"
+            style="@style/text_black_14_m_2"
+            android:layout_marginRight="20dp"
+            android:digits="1234567890."
+            android:background="@null"
+            android:hint="@string/setting_port_hint" />
+
+    </LinearLayout>
+    <!-- 节点设置-->
+    <include layout="@layout/activity_line" />
+
+    <LinearLayout style="@style/my_ll">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            style="@style/text_black_16_w"
+            android:text="@string/setting_node"
+            />
+
+        <EditText
+            android:id="@+id/txtNode"
+            style="@style/text_black_14_m_2"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:hint="@string/setting_node_hint"/>
+    </LinearLayout>
+
+    <View style="@style/line_vertical" />
+</LinearLayout>

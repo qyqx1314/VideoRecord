@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/common_blue">
+
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+<!--用户名-->
+    <RelativeLayout
+        android:id="@+id/ll_my"
+        style="@style/my_rl"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            style="@style/my_left_txt"
+            android:text="@string/login_user_name_hint" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            style="@style/my_right_txt"
+            android:text="@string/user_name1" />
+    </RelativeLayout>
+<!--参数设置-->
+    <RelativeLayout
+        android:id="@+id/layout_para_setting"
+        style="@style/my_rl"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            style="@style/my_left_txt"
+            android:text="@string/parameter_set" />
+        <ImageView
+            style="@style/img_next1"
+            android:contentDescription="@null"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/line_vertical"/>
+    <!--离线数据-->
+    <RelativeLayout
+        android:id="@+id/rl_offline"
+        style="@style/my_rl">
+        <TextView
+            style="@style/my_left_txt"
+            android:text="@string/off_data" />
+        <ImageView
+            style="@style/img_next1"
+            android:contentDescription="@null"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/line_vertical"/>
+    <!--存储状态-->
+    <RelativeLayout
+        android:id="@+id/save_state"
+        android:visibility="gone"
+        style="@style/my_rl">
+        <TextView
+            style="@style/my_left_txt"
+            android:text="@string/save_state" />
+        <ImageView
+            android:id="@+id/image_to"
+            style="@style/img_next1"
+            android:contentDescription="@null"
+            />
+        <TextView
+            android:id="@+id/text_save"
+            style="@style/my_right_txt1"
+            android:text="@string/save_lost"
+            android:layout_toLeftOf="@id/image_to"
+            android:layout_marginRight="12dp"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/line_vertical"/>
+    <!--版本更新-->
+    <RelativeLayout
+        android:id="@+id/version_up"
+        android:layout_marginTop="16dp"
+        style="@style/my_rl">
+        <TextView
+            style="@style/my_left_txt"
+            android:text="@string/up_new" />
+        <ImageView
+            android:id="@+id/image_to1"
+            style="@style/img_next1"
+            android:contentDescription="@null"
+            />
+        <TextView
+            android:id="@+id/version_num"
+            style="@style/my_right_txt1"
+            android:text="@string/edition"
+            android:layout_toLeftOf="@id/image_to1"
+            android:layout_marginRight="12dp"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/line_vertical"/>
+    <!--关于-->
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        style="@style/my_rl">
+        <TextView
+            style="@style/my_left_txt"
+            android:text="@string/about" />
+        <ImageView
+            style="@style/img_next1"
+            android:contentDescription="@null"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/line_vertical"/>
+    <!--退出登录-->
+    <Button
+        android:id="@+id/out_Login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_out_pressed"
+        android:text="@string/out_load"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+</LinearLayout>

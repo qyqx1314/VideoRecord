@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>q
+    <dbname value="easydb" />
+    <version value="23" />
+    <list>
+        <mapping class="com.banger.videorecord.mouble.setting.bean.Phone" />
+        <mapping class="com.banger.videorecord.mouble.setting.bean.Person" />
+        <mapping class="com.banger.videorecord.mouble.product.bean.BizType" />
+        <mapping class= "com.banger.videorecord.mouble.product.bean.ProdClass"/>
+        <mapping class="com.banger.videorecord.mouble.record.bean.ProcessInfo"/>
+        <mapping class="com.banger.videorecord.mouble.product.bean.ProductDetailInfo" />
+        <mapping class="com.banger.videorecord.mouble.product.bean.ProductClass" />
+        <mapping class="com.banger.videorecord.mouble.record.bean.VideoInfoBean" />
+        <mapping class="com.banger.videorecord.mouble.record.bean.BusinessInfoBean" />
+        <mapping class="com.banger.videorecord.mouble.record.bean.ImageInfoBean" />
+        <mapping class="com.banger.videorecord.mouble.setting.bean.OfflineImportHistory" />
+        <mapping class="com.banger.videorecord.mouble.setting.bean.DownLoadBean" />
+    </list>
+</litepal>

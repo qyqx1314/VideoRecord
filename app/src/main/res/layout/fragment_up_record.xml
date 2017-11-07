@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+    <!--<ScrollView-->
+    <!--android:id="@+id/scrollview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="none">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_up"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="29dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/up_now"
+                    android:textSize="@dimen/text_size_13" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/no_toast"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_no"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/record_typeface"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                />
+
+            <ListView
+                android:id="@+id/up_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/white"
+                android:listSelector="@color/white"
+                android:background="@color/white"
+                android:scrollbars="none" />
+        </LinearLayout>
+    <!--</ScrollView>-->
+</LinearLayout>
+

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_ring1"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ring"
+                android:gravity="center"
+                android:text="@string/ring_num"
+                android:textColor="@color/login_bg"
+                android:textSize="@dimen/text_size_10"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <!--环节一视频名-->
+            <TextView
+                android:id="@+id/txt_video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/video_name"
+                android:textColor="@color/record_typeface"
+                android:textSize="@dimen/text_size_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/icon_time_length"/>
+                <!--视频一时长-->
+                <TextView
+                    android:id="@+id/txt_video_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/video_time"
+                    android:textColor="@color/record_typeface"
+                    android:textSize="@dimen/text_size_8"/>
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/icon_video_size"/>
+                <!--环节一视频大小-->
+                <TextView
+                    android:id="@+id/txt_video_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/video_size"
+                    android:textColor="@color/record_typeface"
+                    android:textSize="@dimen/text_size_8"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_show_video1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="-10dp">
+
+                        <ImageView
+                            android:id="@+id/img_reload_video"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/btn_up_reload"
+                            android:visibility="gone"/>
+                        <!--环节一进度条-->
+                        <com.banger.videorecord.mouble.record.widget.RoundProgressBar
+                            android:id="@+id/progressBar_video"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="6dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_video_upState"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="6dp"
+                            android:text="@string/up_now"
+                            android:textColor="@color/record_typeface"
+                            android:textSize="@dimen/text_size_10"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/line_vertical"/>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- 第一行布局-->
+        <LinearLayout style="@style/apply_ll_item">
+            <!-- 产品名称-->
+            <TextView
+                android:id="@+id/txt_name"
+                style="@style/text_black_14_0_w"
+                android:layout_marginStart="12dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/product_name" />
+            <!-- 产品编号-->
+            <LinearLayout style="@style/common_ll_0_m_h">
+
+                <TextView
+                    style="@style/text_black_14_w"
+                    android:text="@string/product_code_"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_code"
+                    style="@style/text_black_14_w_"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/product_code" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/apply_ll_item">
+            <!-- 业务类型-->
+            <LinearLayout style="@style/common_ll_0_m_h">
+
+                <TextView
+                    style="@style/text_black_14_w"
+                    android:text="@string/product_type2"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_biz_type"
+                    style="@style/text_black_14_w_"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/business_type" />
+
+            </LinearLayout>
+            <!--产品类型-->
+            <LinearLayout style="@style/common_ll_0_m_h">
+
+                <TextView
+                    style="@style/text_black_14_w"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/product_type"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_product_type"
+                    style="@style/text_black_14_w_"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/product_type" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

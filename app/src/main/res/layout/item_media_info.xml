@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <!--环节一-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt_round"
+            style="@style/item_name"
+            android:layout_centerVertical="true"
+            android:text="@string/ring_num"
+            android:textColor="@color/item_name"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <View style="@style/line_vertical" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+
+            android:orientation="horizontal">
+            <!--播放视频-->
+            <RelativeLayout
+                android:id="@+id/layout_take_video"
+                style="@style/ring_ll">
+
+                <RelativeLayout
+                    android:id="@+id/rl_take_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_camera_pressed">
+
+                    <ImageView
+                        android:id="@+id/img_play"
+                        style="@style/ring_img"
+                        android:background="@drawable/icon_video_pressed" />
+
+                    <TextView
+                        android:id="@+id/txt_play_video"
+                        style="@style/ring_font"
+                        android:layout_below="@id/img_play"
+                        android:text="@string/take_video"
+                        android:textColor="@drawable/text_camera_pressed" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_show_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_video_cut"
+                        style="@style/img_display"
+                        android:contentDescription="@string/img_description" />
+
+                    <ImageView
+                        android:id="@+id/img_display"
+                        style="@style/img_play_small"
+                        android:contentDescription="@string/img_description" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <!--拍摄凭证-->
+            <RelativeLayout
+                android:id="@+id/rl_pic_take"
+                style="@style/ring_ll"
+                android:background="@drawable/bg_camera_pressed">
+
+                <ImageView
+                    android:id="@+id/take_ok"
+                    style="@style/ring_img"
+                    android:background="@drawable/icon_camera_pressed" />
+
+                <TextView
+                    style="@style/ring_font"
+                    android:layout_below="@id/take_ok"
+                    android:text="@string/record_right"
+                    android:textColor="@drawable/text_camera_pressed" />
+            </RelativeLayout>
+            <!--拍摄凭证1-->
+            <RelativeLayout style="@style/ring_ll">
+
+                <ImageView
+                    android:id="@+id/img_one"
+                    style="@style/img_display"
+                    android:contentDescription="@string/img_description"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <!--拍摄凭证2-->
+            <RelativeLayout style="@style/ring_ll">
+
+                <ImageView
+                    android:id="@+id/img_two"
+                    style="@style/img_display"
+                    android:contentDescription="@string/img_description"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <!-- 拍摄凭证3-->
+            <RelativeLayout
+                android:id="@+id/rl_img_three"
+                style="@style/ring_ll"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/img_three"
+                    style="@style/img_display"
+                    android:contentDescription="@string/img_description"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        style="@style/line_vertical"/>
+
+
+</LinearLayout>

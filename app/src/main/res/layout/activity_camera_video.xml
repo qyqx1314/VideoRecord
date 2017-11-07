@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/layout_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/my_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            android:background="@color/camera_bg"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_go_back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/img_back"
+                android:paddingEnd="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingStart="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_go_back1" />
+
+            <TextView
+                android:id="@+id/activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/title_home"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="100dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/setting_rl"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="bottom"
+            android:background="@color/camera_bg">
+            <!-- 分辨率-->
+            <TextView
+                android:id="@+id/flash_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/text_camera_done_pressed"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/pixel_240"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <!-- 拍摄完成之后的取消按钮-->
+            <com.banger.videorecord.mouble.record.widget.MyCircleImageView
+                android:id="@+id/pre_view"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:background="@color/transparent"
+                android:contentDescription="@string/img_description"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/take_btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/take_pic_bg"
+                android:contentDescription="@string/img_description" />
+
+            <ImageButton
+                android:id="@+id/take_video_btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/img_video_state"
+                android:contentDescription="@string/img_description"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/swich_camera_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                android:contentDescription="@string/img_description"
+                android:src="@drawable/btn_camera_swith" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/img_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/black_hint_30"
+            android:contentDescription="@string/img_description"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/icon_play"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/txt_delete"
+            style="@style/text_camera"
+            android:layout_marginStart="30dp"
+            android:text="@string/video_delete"
+            android:textColor="@drawable/camera_text_delete_pressed" />
+
+        <TextView
+            android:id="@+id/txt_done"
+            style="@style/text_camera"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="30dp"
+            android:text="@string/finish"
+            android:textColor="@drawable/camera_text_save_pressed" />
+    </RelativeLayout>
+</LinearLayout>

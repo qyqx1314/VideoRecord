@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_hint_30"
+    android:orientation="vertical">
+
+    <com.banger.videorecord.mouble.record.widget.MyVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+         />
+
+    <ImageView
+        android:id="@+id/img_go_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="13dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_go_back" />
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/photo_delete_state" />
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/activity_head"/>
+    <LinearLayout
+        android:id="@+id/classify1"
+        style="@style/apply_ll"
+        >
+
+        <TextView
+            style="@style/text_black_16_w"
+            android:layout_weight="1"
+            android:layout_marginLeft="33dp"
+            android:text="@string/choose_classify1" />
+
+        <ImageView
+            style="@style/img_next"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_next" />
+
+    </LinearLayout>
+
+    <View style="@style/line_vertical" />
+    <LinearLayout
+        android:id="@+id/classify2"
+        style="@style/apply_ll"
+        >
+
+        <TextView
+            style="@style/text_black_16_w"
+            android:layout_weight="1"
+            android:layout_marginLeft="33dp"
+            android:text="@string/choose_classify2" />
+
+        <ImageView
+            style="@style/img_next"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_next" />
+
+    </LinearLayout>
+
+    <View style="@style/line_vertical" />
+
+
+
+</LinearLayout>

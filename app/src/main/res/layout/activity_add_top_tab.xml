@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_switch_tab_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:baselineAligned="false"
+        >
+
+        <LinearLayout
+            android:id="@+id/id_tab_chat_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/guide_round_selector"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+
+            <TextView
+                android:id="@+id/local_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/local_record"
+                android:textColor="@color/record_typeface"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_tab_friend_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/guide_round_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:saveEnabled="false" >
+
+            <TextView
+                android:id="@+id/up_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/up_record"
+                android:textColor="@color/record_typeface"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_tab_contacts_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/guide_round_selector"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/up_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/up_success"
+                android:textColor="@color/record_typeface"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_tab_line_iv"
+        android:layout_width="120dp"
+        android:layout_height="2dp"
+        android:contentDescription="@null"
+        android:background="@drawable/tab_selected_pressed_holo" >
+    </ImageView>
+
+    <View
+        style="@style/line_vertical"/>
+
+</LinearLayout>

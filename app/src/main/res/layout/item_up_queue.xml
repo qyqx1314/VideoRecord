@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/common_bg"
+        />
+    <!--业务-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txt_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/user_name1"
+                        android:textColor="@color/item_name"
+                        android:textSize="@dimen/text_size_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_biz_type"
+                            style="@style/common_text"
+                            android:layout_marginLeft="16dp"
+                            android:text="@string/video_type" />
+
+                        <TextView
+                            android:id="@+id/txt_product_type"
+                            style="@style/common_text"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/manage_type" />
+
+                        <TextView
+                            android:id="@+id/txt_product_name"
+                            style="@style/common_text"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/manage_name" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_create_time"
+                        style="@style/common_text"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/manage_time"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layout_videos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+        <!--环节一-->
+        <LinearLayout
+            android:id="@+id/layout_ring1"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ring"
+                    android:gravity="center"
+                    android:text="@string/ring_num"
+                    android:textColor="@color/login_bg"
+                    android:textSize="@dimen/text_size_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <!--环节一视频名-->
+                <TextView
+                    android:id="@+id/txt_video_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/video_name"
+                    android:textColor="@color/record_typeface"
+                    android:textSize="@dimen/text_size_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/icon_time_length" />
+                    <!--视频一时长-->
+                    <TextView
+                        android:id="@+id/txt_video_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/video_time"
+                        android:textColor="@color/record_typeface"
+                        android:textSize="@dimen/text_size_8" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/icon_video_size" />
+                    <!--环节一视频大小-->
+                    <TextView
+                        android:id="@+id/txt_video_size1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/video_size"
+                        android:textColor="@color/record_typeface"
+                        android:textSize="@dimen/text_size_8" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_show_video1"
+                            android:layout_marginRight="-10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_reload_video1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:src="@drawable/btn_up_reload"
+                                android:visibility="gone" />
+                            <!--环节一进度条-->
+                            <com.banger.videorecord.mouble.record.widget.RoundProgressBar
+                                android:id="@+id/progressBar_video1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp" />
+
+                            <TextView
+                                android:id="@+id/txt_video_upState1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/up_now"
+                                android:textColor="@color/record_typeface"
+                                android:textSize="@dimen/text_size_10" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/line_vertical" />
+
+        <!--环节二-->
+        <LinearLayout
+            android:id="@+id/layout_ring2"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ring"
+                    android:gravity="center"
+                    android:text="@string/ring_num2"
+                    android:textColor="@color/login_bg"
+                    android:textSize="@dimen/text_size_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+<!--环节二视频名-->
+                <TextView
+                    android:id="@+id/txt_video_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/video_name"
+                    android:textColor="@color/record_typeface"
+                    android:textSize="@dimen/text_size_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/icon_time_length" />
+<!--视频二时长-->
+                    <TextView
+                        android:id="@+id/txt_video_time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/video_time"
+                        android:textColor="@color/record_typeface"
+                        android:textSize="@dimen/text_size_8" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/icon_video_size" />
+<!--环节二视频大小-->
+                    <TextView
+                        android:id="@+id/txt_video_size2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/video_size"
+                        android:textColor="@color/record_typeface"
+                        android:textSize="@dimen/text_size_8" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_show_video2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="-10dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_reload_video2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:src="@drawable/btn_up_reload"
+                                android:visibility="gone"
+                                 />
+
+                            <com.banger.videorecord.mouble.record.widget.RoundProgressBar
+                                android:id="@+id/progressBar_video2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                 />
+
+                            <TextView
+                                android:id="@+id/txt_video_upState2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/wait_up"
+                                android:textColor="@color/record_typeface"
+                                android:textSize="@dimen/text_size_10" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/line_vertical" />
+        <!--凭证-->
+        <LinearLayout
+            android:id="@+id/ll_pic"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ring"
+                    android:gravity="center"
+                    android:text="@string/wait_up1"
+                    android:textColor="@color/login_bg"
+                    android:textSize="@dimen/text_size_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/icon_pic_count" />
+                <!--照片数-->
+                    <TextView
+                        android:id="@+id/txt_pic_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/pic_count"
+                        android:textColor="@color/record_typeface"
+                        android:textSize="@dimen/text_size_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/icon_up_success" />
+                <!--已经上传数-->
+                    <TextView
+                        android:id="@+id/txt_pic_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/have_up"
+                        android:textColor="@color/record_typeface"
+                        android:textSize="@dimen/text_size_8" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/to_to"
+                        android:textColor="@color/record_typeface"
+                        android:textSize="@dimen/text_size_8" />
+                    <!--照片总数-->
+                    <TextView
+                        android:id="@+id/txt_pic_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/pic_total"
+                        android:textColor="@color/record_typeface"
+                        android:textSize="@dimen/text_size_8" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_reload_image"
+                            android:visibility="gone"
+                            android:layout_marginRight="-10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_reload_image"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:background="@drawable/btn_up_reload" />
+
+                            <TextView
+                                android:id="@+id/txt_reUpload_pic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/re_up"
+                                android:textColor="@color/record_typeface"
+                                android:textSize="@dimen/text_size_10" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/line_vertical" />
+    </LinearLayout>
+
+</LinearLayout>
